@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ログイン成功</title>
+</head>
+<body>
+ログインに成功しました。<span th:text="${#dates.format(new java.util.Date(), 'yyy/MM/dd hh:mm:ss')}"></span>
+<div th:text="${#numbers.formatInteger(param.id,0,'COMMA')}"></div>
+<div th:text="${param.pass}"></div>
+</body>
+</html>

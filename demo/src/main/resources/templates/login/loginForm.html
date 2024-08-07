@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title th:text="#{login.title}"></title>
+</head>
+<body>
+	<span th:if="${errMsg != null}" th:text="${errMsg}"></span>
+	<form action="/login" method="post">
+	<div>
+		<div><span th:text="#{login.id}"></span><input type="text" name="id" th:value="${param.id}"></div>
+		<div><span th:text="#{login.pass}"></span><input type="password" name="pass"></div>
+		<div><input type="submit" th:value="#{login.btn}"></div>
+	</div>
+	</form>
+
+</body>
+</html>
